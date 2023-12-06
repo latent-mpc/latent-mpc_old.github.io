@@ -71,7 +71,8 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">The Hong Kong University of Science and Technology (Guangzhou), King Abdullah University of Science and Technology
+                    <span class="author-block">The Hong Kong University of Science and Technology (Guangzhou) 
+                      <br> King Abdullah University of Science and Technology
                       <!--<br>Conferance name and year--></span>
                     <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
                   </div>
@@ -100,6 +101,17 @@
                     </a>
                   </span>-->
 
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2308.15808" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/yubinwang11/latent_mpc" target="_blank"
@@ -111,16 +123,6 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2308.15808" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -155,7 +157,26 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We propose a novel learning-based
+              online model predictive control (MPC) framework for motion
+              synthesis of self-driving vehicles. In this framework, the decision
+              variables are generated as instantaneous references to modulate
+              the cost functions of online MPC, where the constraints of
+              collision avoidance and drivable surface boundaries are latently
+              represented in the soft form. Hence, the embodied maneuvers
+              of the ego vehicle are empowered to adapt to complex and
+              dynamic traffic environments, even with unmodeled uncertainties
+              of other traffic participants. Furthermore, we implement a deep
+              reinforcement learning (DRL) framework for policy search to cast
+              the step actions as the decision variables, where the practical and
+              lightweight observations are considered as the input features of
+              the policy network. The proposed approach is implemented in
+              the high-fidelity simulator involving compound-complex urban
+              driving scenarios, and the results demonstrate that the proposed
+              development manifests remarkable adaptiveness to complex and
+              dynamic traffic environments with a success rate of 85%. Also, its
+              advantages in terms of safety, maneuverability, and robustness
+              are illustrated.
           </p>
         </div>
       </div>
