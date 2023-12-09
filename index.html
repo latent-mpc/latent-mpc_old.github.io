@@ -1,30 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
-
+  
 <style>
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-.video-container {
-    width: 30%;
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-}
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+  .publication-video iframe {
+      width: 100%;
+      height: 0;
+      padding-bottom: 177.77%; /* 9:16 Aspect Ratio */
+      overflow: hidden;
+  }
 </style>
-</head>
-<body>
   
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
@@ -258,7 +243,7 @@
   <div class="hero-body"> 
     <div class="container"> 
       <!-- Video Presentation --> 
-      <h2 class="title is-3">Video Presentation</h2> 
+      <h2 class="title is-3">Sim-to-Real Deployment</h2> 
       <div class="columns is-centered has-text-centered"> 
         <!-- First video -->
         <div class="column is-one-third"> 
@@ -270,14 +255,14 @@
         <!-- Second video -->
         <div class="column is-one-third"> 
           <div class="publication-video"> 
-            <iframe src="static/videos/interactive-overtake" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+            <iframe src="static/videos/interactive-overtake.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
             <p>这是第二个视频的介绍</p>
           </div> 
         </div>
         <!-- Third video -->
         <div class="column is-one-third"> 
           <div class="publication-video"> 
-            <iframe src="static/videos/multi-overtake" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+            <iframe src="static/videos/multi-overtake.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
             <p>这是第三个视频的介绍</p>
           </div> 
         </div>
