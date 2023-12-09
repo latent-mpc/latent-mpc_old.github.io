@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+
+<style>
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.video-container {
+    width: 30%;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+</head>
+<body>
+  
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
@@ -250,45 +275,23 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Sim-to-Real Deployment</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="50%">
-            <!-- Your video file here -->
-            <source src="static/videos/lane-change.mp4"
-            type="video/mp4">
-            <h2 class="subtitle has-text-centered">
-              First image description.
-            </h2>
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="50%">
-            <!-- Your video file here -->
-            <source src="static/videos/interactive-overtake.mp4"
-            type="video/mp4">
-            <h2 class="subtitle has-text-centered">
-              First image description.
-            </h2>
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="50%">\
-            <!-- Your video file here -->
-            <source src="static/videos/multi-overtake.mp4"
-            type="video/mp4">
-            <h2 class="subtitle has-text-centered">
-              First image description.
-            </h2>
-          </video>
-        </div>
-      </div>
-    </div>
+<div class="row">
+  <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/abc" frameborder="0" allowfullscreen></iframe>
+      <p>这是第一个视频的介绍</p>
   </div>
-</section>
+  <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/def" frameborder="0" allowfullscreen></iframe>
+      <p>这是第二个视频的介绍</p>
+  </div>
+  <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ghi" frameborder="0" allowfullscreen></iframe>
+      <p>这是第三个视频的介绍</p>
+  </div>
+</div>
+
+</body>
+</html>
 <!-- End video carousel -->
 
 
