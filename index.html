@@ -65,6 +65,8 @@
                   <span class="author-block">
                     <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yusen Xie</a><!--<sup>*</sup>-->,</span>
                   <span class="author-block">
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yulin Li</Li></a><!--<sup>*</sup>-->,</span>
+                  <span class="author-block">
                     <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hakim Ghazzai</a><!--<sup>*</sup>-->,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jun Ma</a>
@@ -158,26 +160,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We propose a novel learning-based
-              online model predictive control (MPC) framework for motion
-              synthesis of self-driving vehicles. In this framework, the decision
-              variables are generated as instantaneous references to modulate
-              the cost functions of online MPC, where the constraints of
-              collision avoidance and drivable surface boundaries are latently
-              represented in the soft form. Hence, the embodied maneuvers
-              of the ego vehicle are empowered to adapt to complex and
-              dynamic traffic environments, even with unmodeled uncertainties
-              of other traffic participants. Furthermore, we implement a deep
-              reinforcement learning (DRL) framework for policy search to cast
-              the step actions as the decision variables, where the practical and
-              lightweight observations are considered as the input features of
-              the policy network. The proposed approach is implemented in
-              the high-fidelity simulator involving compound-complex urban
-              driving scenarios, and the results demonstrate that the proposed
-              development manifests remarkable adaptiveness to complex and
-              dynamic traffic environments with a success rate of 85%. Also, its
-              advantages in terms of safety, maneuverability, and robustness
-              are illustrated.
+            In this work, we propose a novel learning-based
+          model predictive control (MPC) framework for motion planning
+          and control of urban self-driving. In this framework, instanta-
+          neous references and cost functions of online MPC are learned
+          from raw sensor data without relying on any oracle or predicted
+          states of traffic. Moreover, driving safety conditions are latently
+          encoded via the introduction of a learnable instantaneous refer-
+          ence vector. In particular, we implement a deep reinforcement
+          learning (DRL) framework for policy search, where practical and
+          lightweight raw observations are processed to reason about the
+          traffic and provide the online MPC with instantaneous references.
+          The proposed approach is validated in a high-fidelity simulator,
+          where our development manifests remarkable adaptiveness to
+          complex and dynamic traffic. Furthermore, sim-to-real deploy-
+          ments are also conducted to evaluate the generalizability of the
+          proposed framework in various real-world applications.
           </p>
         </div>
       </div>
